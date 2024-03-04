@@ -1,22 +1,17 @@
-html{
-    margin:0;
-    padding:0;
-    width: 100%;
-    color:white;
-    font-family: "Open Sans", sans-serif;
-}
+
 body
 {
     margin: 0;
     padding: 0;
-    width: 100%;
-    
+   
+   font-family: "Open Sans", sans-serif;
+    color: white;
    
 }
 .section-one
 {
    
-    width: 100%;
+    max-width: 100%;
     height: 120vh;
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("images/background\ image.webp");
     background-size: cover; 
@@ -32,21 +27,22 @@ header
 .header-div
 {
     display: flex;
+    flex-wrap:wrap;
     justify-content: space-around;
     padding: 0.5em;
  }
 
 .logo
 {
-    width: 84px;
-    height: 24px;
+    width: 9.25rem;
+    height: 2.5rem;
 }
 select
 {
     background-color: black;
     position: relative;
     color: white ;
-    width: 123px;
+    max-width:123px;
     height: 32px;
     text-align: center;
     font-weight: bold;
@@ -64,7 +60,7 @@ select option
 }
 
 #form1 button{
-    width: 76px;
+    max-width: 76px;
     height: 32px;
     background-color: red;
     border: none;
@@ -88,22 +84,34 @@ select option
 
 }
 h1{
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     font-weight:900;
    
     margin: 0;
 }
 p, h3{
 
-    font-size: 1.25rem;
-    font-weight: normal;
+    font-size: 1rem;
+    font-weight: 400;
     
+
+}
+
+#form2
+
+{
+    display:flex;
+   justify-content: center;
+   gap:5px;
+    max-width: 65.5rem;
+    text-align: center;
+    padding-left: 5.75rem;
 
 }
 
 #form2 input
 {
-    width: 364px;
+    /* max-width: 364px;
     height: 54px;
     opacity: .5;
     text-align: start;
@@ -111,18 +119,27 @@ p, h3{
     color: white;   
     font-size: 1.25rem;
     background-color: black;
-    padding-left: 10px;
-    border: solid .5px white;
+    padding-left: 10px; */
+    border: solid .5px white; 
    
-    border-radius: 5px;
+    border-radius: 5px; 
+    line-height: 1.5rem;
+    font-size: 1rem;
+    min-height: 16px;
+    min-width: 16px;
+    width:25rem ;
+    color: white;
+    background: transparent;
+   
+   
 
 }
 
 #form2 button
 {
     height: 56px;
-    width: 240px;
-    
+    max-width: 240px;
+    width:25rem ;
     font-size: 1.5rem;
     border-radius: 5px;
     background-color: red;
@@ -151,8 +168,6 @@ p, h3{
     width: 80%;
     position: relative;
     display:flex;
-    align-items: center;
-    justify-content: center;
     margin: auto;
 }
 #section-2-img
@@ -168,6 +183,13 @@ p, h3{
     padding: 0;
 }
 
+.section-2-sub-div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 .section-2-sub-div h2{
     font-size: 2.5rem;
@@ -179,12 +201,50 @@ p, h3{
 .vedio
 {
     width: 36%;
-     height: 60%;
+     height: 90%;
     position: absolute;
-    left: 54%;
+    left: 50.4%;
+    top:3%;
     z-index: 1;
     
     
+}
+
+footer{
+    background-color: black;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;      
+    border-top: 8px solid rgb(51, 51, 51);
+}
+.call
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.un_list
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style:none;
+    text-decoration: none;
+    gap: 5px;
+    color: white;
+    
+}
+
+li a , .call p , .call a
+{
+    color: white;
 }
 
 
@@ -194,17 +254,66 @@ p, h3{
 
 
 
-/* @media (max-width:400px)
+ @media (max-width:960px)
 {
-    #form2 input
+
+    .logo{
+        width: 5.5625rem;
+        height: 1.5rem;
+    }
+
+
+}
+@media screen and (min-width: 960px)
+{
+    h1
     {
-        width: 100%;
+        font-size: 3rem;
+    font-weight: 900;
+    }
+    p , h3 
+    {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    
+}
+
+@media (max-width:400px)
+{
+
+    .logo{
+        width:30%;
+    }
+
+  
+    .section-
+      #form1 ,select ,#form2
+      {
+          width:30%;
+          font-size: 0.5rem;
+      }
+      
+    
+    .header-div
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-1-heading
+    {
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
     }
     
-    #form2 button
+    #form2
     {
-        width: 100%;
-    } */
+        flex-direction: column;
+    }
+
+}
 
 
 
